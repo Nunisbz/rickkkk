@@ -1,0 +1,174 @@
+/* Estilos Globais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #202329;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container Principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Barra de Busca */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+.search-bar select {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  background-color: #97ce4c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #202329;
+  font-weight: bold;
+}
+
+.search-bar button:hover {
+  background-color: #82b244;
+}
+
+/* Lista de Personagens */
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card de Personagem */
+.character-card {
+  background-color: #3c3e44;
+  border: 1px solid #97ce4c;
+  border-radius: 10px;
+  padding: 15px;
+  width: 150px;
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+}
+
+.character-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Título */
+.character-card h3 {
+  font-size: 1.1rem;
+  color: #97ce4c;
+}
+
+/* Detalhes do Personagem */
+.character-details {
+  background-color: #3c3e44;
+  border: 1px solid #97ce4c;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.character-details img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.character-details button {
+  padding: 10px 15px;
+  background-color: #97ce4c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #202329;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.character-details button:hover {
+  background-color: #82b244;
+}
+
+/* Paginação */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  background-color: #97ce4c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #202329;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 10px;
+  font-size: 1.1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .character-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .character-card {
+    width: 100%;
+  }
+
+  .search-bar input {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
+  .search-bar select {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
+  .search-bar button {
+    width: 70%;
+  }
+}
