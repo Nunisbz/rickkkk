@@ -1,4 +1,3 @@
-/* Estilos Globais */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #202329;
@@ -8,7 +7,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Container Principal */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -16,7 +14,6 @@ body {
   text-align: center;
 }
 
-/* Barra de Busca */
 .search-bar {
   margin-bottom: 20px;
 }
@@ -50,7 +47,6 @@ body {
   background-color: #82b244;
 }
 
-/* Lista de Personagens */
 .character-list {
   display: flex;
   flex-wrap: wrap;
@@ -58,7 +54,6 @@ body {
   gap: 20px;
 }
 
-/* Card de Personagem */
 .character-card {
   background-color: #3c3e44;
   border: 1px solid #97ce4c;
@@ -80,13 +75,11 @@ body {
   margin-bottom: 10px;
 }
 
-/* Título */
 .character-card h3 {
   font-size: 1.1rem;
   color: #97ce4c;
 }
 
-/* Detalhes do Personagem */
 .character-details {
   background-color: #3c3e44;
   border: 1px solid #97ce4c;
@@ -117,7 +110,6 @@ body {
   background-color: #82b244;
 }
 
-/* Paginação */
 .pagination {
   display: flex;
   justify-content: center;
@@ -146,7 +138,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .character-card {
     width: 45%;
